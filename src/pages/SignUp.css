@@ -1,0 +1,107 @@
+/* src/pages/Signup.css */
+.signup-container {
+  display: flex; /* Flexbox to position the image and form side-by-side */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7; /* Optional background color */
+  padding: 20px;
+}
+
+.signup-image {
+  flex: 1; /* Image takes up one part of the flex container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; /* Add right margin to create a gap */
+}
+
+.signup-image img {
+  max-width: 100%; /* Make image responsive */
+  height: 100vh;
+  border-radius: 8px;
+  margin-left: -10%;
+}
+
+.signup-form {
+  flex: 1; /* Form takes up one part of the flex container */
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 89vh;
+}
+
+.signup-form h1 {
+  margin-bottom: 20px;
+}
+
+.signup-form form .form-row {
+  display: flex; /* Flexbox to align name and username in the same row */
+  gap: 20px; /* Gap between the two input fields */
+  margin-bottom: 15px; /* Space below the row */
+}
+
+.signup-form form .form-group {
+  flex: 1; /* Equal width for each input field */
+  display: flex;
+  flex-direction: column; /* Align label and input vertically */
+  width: 50%; /* Make each input field take 50% of the row */
+}
+.signup-form form .form-group2 {
+  flex: 1; /* Equal width for each input field */
+ 
+  flex-direction: column; /* Align label and input vertically */
+  width: 100%;
+}
+.signup-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%; /* Full width of the form-group */
+}
+
+.signup-form button {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.forgot-password,
+.already-user {
+  text-align: start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.already-user a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.already-user a:hover {
+  text-decoration: underline;
+}
+.auth-toggle{
+  margin-left:10px;
+}
+.auth-toggle span{
+  color:rgb(48, 4, 11);
+  text-decoration: underline;
+}
